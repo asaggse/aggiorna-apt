@@ -1,16 +1,24 @@
 # Aggiornamento Raspberry Pi
 
-Script Bash per aggiornare l'elenco dei pacchetti e installare gli aggiornamenti disponibili su Raspberry Pi OS tramite APT.
+Questo script aggiorna i pacchetti installati su Raspberry Pi OS usando APT.
 
-## Requisiti
+## Come usarlo
 
-- Raspberry Pi con Raspberry Pi OS
-- Connessione a Internet
-- Un utente autorizzato a usare `sudo`
+1. Apri la pagina di questa repository su GitHub.
+2. Premi **Code → Download ZIP** e decomprimi il file ZIP sul Raspberry Pi.
+3. Apri il terminale e spostati nella cartella estratta, quella che contiene `aggiorna.sh`.
+4. Rendi eseguibile lo script:
 
-## Scaricare lo script
+   ```bash
+   chmod +x aggiorna.sh
+   ```
 
-Sul Raspberry Pi, apri il terminale e scarica il file dalla repository:
+5. Avvialo:
 
-```bash
-curl -O https://raw.githubusercontent.com/assagge/aggiorna-apt/main/aggiorna.sh
+   ```bash
+   ./aggiorna.sh
+   ```
+
+Se richiesto, inserisci la password del tuo utente per autorizzare `sudo`.
+
+> **Nota:** lo script usa `-y`, quindi conferma automaticamente l'installazione degli aggiornamenti.
