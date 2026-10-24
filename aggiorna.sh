@@ -12,4 +12,7 @@ sudo apt-get update
 echo "Installo gli aggiornamenti disponibili..."
 sudo apt-get full-upgrade -y
 
+echo "Rimuovo i pacchetti non più necessari..."
+sudo apt-get autoremove -y
+
 echo "Aggiornamento completato."
