@@ -10,6 +10,6 @@ echo "Aggiorno l'elenco dei pacchetti..."
 sudo apt-get update
 
 echo "Installo gli aggiornamenti disponibili..."
-sudo apt-get upgrade -y
+sudo apt-get full-upgrade -y
 
 echo "Aggiornamento completato."
